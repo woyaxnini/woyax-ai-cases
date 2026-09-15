@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woyax AI Cases — кейсы внедрения ИИ</title>
+<meta name="description" content="Реальные кейсы внедрения ИИ в бизнесе: ИИ-агенты, аудит процессов, автоматизация маркетплейсов, аналитика и другие проекты Woyax — с цифрами и деталями.">
+
+<link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Woyax AI Cases — кейсы внедрения ИИ">
+<meta property="og:description" content="Реальные кейсы внедрения ИИ в бизнесе — с цифрами и деталями.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --brand: #5C6B80;
+    --brand-dark: #4A5668;
+    --brand-darker: #3B4553;
+    --blue: #2E7FD4;
+    --blue-light: #4FA8E8;
+    --blue-bg: #EFF6FD;
+    --purple: #7C3AED;
+    --purple-bg: #F3F0FF;
+    --bg: #FAFBFC;
+    --card: #FFFFFF;
+    --text: #1F2937;
+    --text-muted: #6B7280;
+    --border: #E5E7EB;
+    --border-strong: #D1D5DB;
+    --radius: 12px;
+    --radius-lg: 16px;
+    --shadow-sm: 0 1px 2px rgba(15,23,42,0.04), 0 1px 3px rgba(15,23,42,0.04);
+    --shadow-md: 0 4px 6px rgba(15,23,42,0.05), 0 2px 4px rgba(15,23,42,0.03);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+  a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  a:hover { color: var(--purple); }
+
+  .container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ================= ХЕДЕР ================= */
+  .header {
+    background: linear-gradient(180deg, var(--brand) 0%, var(--brand-dark) 100%);
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.09) 1px, transparent 0),
+      linear-gradient(180deg, var(--brand) 0%, var(--brand-dark) 100%);
+    background-size: 22px 22px, 100% 100%;
+    color: #fff;
+    padding: 32px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .brand-mark {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .brand-mark img {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
+  .brand-name {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.12em;
+    color: #fff;
+  }
+  .brand-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.72);
+    margin-top: 2px;
+    letter-spacing: 0.02em;
+  }
+  .header-contacts {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .header-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 999px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.15s ease;
+    text-decoration: none;
+  }
+  .header-contact:hover {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+  }
+
+  /* ================= HERO ================= */
+  .hero {
+    padding: 56px 0 40px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    background: linear-gradient(120deg, var(--text) 0%, var(--brand) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+  }
+  .hero-subtitle {
+    font-size: clamp(15px, 2vw, 17px);
+    color: var(--text-muted);
+    max-width: 620px;
+    margin: 0 auto;
+    line-height: 1.55;
+  }
+
+  /* ================= КЕЙСЫ ================= */
+  .cases-section { padding: 8px 0 56px; }
+  .cases-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .case-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .case-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-md);
+  }
+  .case-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+  }
+  .case-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--blue-bg);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .case-icon svg { width: 22px; height: 22px; }
+  .case-head-text { min-width: 0; flex: 1; }
+  .case-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+  }
+  .case-subtitle {
+    font-size: 13.5px;
+    color: var(--text-muted);
+  }
+  .case-toggle {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--blue-bg);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease, background 0.2s ease, color 0.2s ease;
+  }
+  .case-toggle svg { width: 13px; height: 13px; }
+  .case-card.open .case-toggle {
+    background: var(--purple);
+    color: #fff;
+    transform: rotate(180deg);
+  }
+  .case-service-btn {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 14px;
+    background: var(--purple-bg);
+    border: 1px solid rgba(124, 58, 237, 0.25);
+    border-radius: 999px;
+    color: var(--purple);
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  .case-service-btn:hover {
+    background: var(--purple);
+    border-color: var(--purple);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(124, 58, 237, 0.25);
+  }
+  .case-service-btn svg { width: 12px; height: 12px; }
+  .case-body-wrap {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+  }
+  .case-card.open .case-body-wrap { grid-template-rows: 1fr; }
+  .case-body { overflow: hidden; min-height: 0; }
+  .case-body-inner {
+    padding: 2px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+    margin: 0 24px;
+  }
+  .case-body-inner { margin: 0; padding-left: 24px; padding-right: 24px; }
+  .case-text {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--text);
+  }
+  .case-subhead {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .case-list {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .case-tools {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+    color: var(--text-muted);
+    padding: 10px 12px;
+    background: #F9FAFB;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    line-height: 1.5;
+  }
+  .case-tools b { color: var(--text); font-weight: 600; }
+
+  /* ================= ФУТЕР ================= */
+  .footer {
+    background: linear-gradient(180deg, var(--brand-dark) 0%, var(--brand-darker) 100%);
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0),
+      linear-gradient(180deg, var(--brand-dark) 0%, var(--brand-darker) 100%);
+    background-size: 22px 22px, 100% 100%;
+    color: #fff;
+    padding: 56px 0 32px;
+    margin-top: 32px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .footer-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 16px;
+  }
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14.5px;
+  }
+  .footer-list a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+  .footer-list a:hover {
+    color: #fff;
+    border-bottom-color: rgba(255,255,255,0.5);
+  }
+  .footer-list .muted {
+    color: rgba(255,255,255,0.6);
+    font-size: 12.5px;
+    font-weight: 400;
+    margin-left: 4px;
+  }
+  .footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    flex-wrap: wrap;
+  }
+  .footer-logo-round {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  .footer-bottom-link {
+    color: rgba(255,255,255,0.85);
+    border-bottom: 1px dotted rgba(255,255,255,0.4);
+  }
+  .footer-bottom-link:hover { color: #fff; }
+
+  /* ================= АДАПТИВ ================= */
+  @media (max-width: 600px) {
+    .container { padding: 0 16px; }
+    .header { padding: 24px 0; }
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    .case-head { padding: 16px 18px; flex-wrap: wrap; }
+    .case-service-btn { order: 10; flex-basis: 100%; justify-content: center; }
+    .case-body-inner { padding-left: 18px; padding-right: 18px; }
+    .cases-section { padding: 4px 0 40px; }
+  }
+</style>
+
+<!-- ==========================================================
+     Яндекс.Метрика
+     Счётчик «Woyax — витрины (GitHub Pages)», домен woyaxnini.github.io.
+     Один счётчик на все страницы домена: этой и AI Stack — чтобы был виден
+     переход между ними внутри одного визита. Разделять в отчётах —
+     фильтром по адресу страницы.
+     ========================================================== -->
+<script>
+  var METRIKA_ID = 112292833;
+
+  if (METRIKA_ID) {
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(METRIKA_ID, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  }
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-top">
+      <a href="#" class="brand-mark" aria-label="Woyax">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wAARCACAAIADASIAAhEBAxEB/8QAHQAAAgEFAQEAAAAAAAAAAAAABgcIAAEDBAUCCf/EAE4QAAECBQEEBAgHCwwDAQAAAAECAwAEBQYRIQcSMUETUWGBFBciQnGRsdIVFiMykqGzCCQmUlNigoOEssEnMzZGVmNyc5OU0eFDdKOk/8QAGgEAAQUBAAAAAAAAAAAAAAAAAAECBAUGA//EAC4RAAEDAgUCBgEEAwAAAAAAAAEAAgMEEQUSEyExFEEGUWFxkdEyIyQ0sYGhwf/aAAwDAQACEQMRAD8AnpNzcvIyi5qadDbSBkqPs9MAVVvSemVqRIHwRkZ8rTfI6yeXdGvetbVNVpUghYEvK6HXAK+ZPo4euIw3dd1QvapvyUnMOMW+0soQ22opM3jitZHFPUnhjU6x2iiLzsuUkgam7VdqFpSU0tmoXfKreGikIdU+oendzHOG12wh/WLP7O77sJ2XpMnLthLcu2kdQTGfwSVB3ehT6olik81HM7vJNwbXbDz/AEgP+3d92L+Nyw+AuAj9nd92FEJOW/JpHdF/BJUf+JH0YXpB5o13eSbnjcsXeP4QgfqHfdi42uWKf6wj/Qd92FF4JLfk0+qLmVleBbR6oOk9Ua7k3DtbsX+0Ix/kO+7FDa3YQOtwp/0HfdhRmVlcYKEdnkxbwSWx/Np9UHSeqNdybnjbsAq/pCNOfQO+7FeN2wc/0g//ADu+7Cj8ElfySfVGVmk+EoJl5F14JOCW2ioA9wgNKO5Rru8k2PG/YIVrcAH7O77sdqh7R6BVZxLdCuuWcfPzWUPltZ9CVYJ9UJA0GZHCkzX+2V/xHLmqPJTKCFsJyOBxgg/whDSi2xS657qZFHvZ9D6ZerjfbOnTpGFJ9IHGDppaHUJcbUFIUMpUDkERDTZ9etRkayxa9fmnJmXfO5JTbysrbXjRpSvOB5E6g6c4krYdZW4tdHeVkJHSM55Dzh/H1xCkjLSpDHhwSb2gVSYasavTrail11paQoHUFxW7n1KMJ2nstsSSEIGAAAIZt/uHxb1EA8Q39omFk0r5BIzyixp2gAqJOdwtorCU5JGOuNR+q0yXJ6ael0kci4M/VHJulZFuuAHGVJ9sAWOfCNDh2FtqmGRzrb2WZxTGH0cgia2+190xHruojRIDzjp/u2yfrOI5r98y4B8HkHCOtxYT7IDSAYIbJoXxgu9iXdTmVZ+XmP8ACDw7zgeuLdmDUzBdwJ/z9Kjk8Q1jvxIHsPu6LmqVf0/IMzcrIU6XbeQFpDj3lAEZGQeBjUcZum356XcuMNKlZpXQpU0tKghfEZwNMw2yrOsc6u0liu2/M0uYO6HU+Qv8RY1SruMBooSwsDAL/K4MxSqEgkdITbt2+EHhxJweuLhQziONSJuYW05JzoLc5KrLLyDyUOffHS3ynXPfGSljMTyx3IW8hlbMwSMOxXSpdLna3Wpal05rpJqYWEIHIdZPUAMknqESstagSlq2vL0aQJIb8p13GC84fnLPp5dQAEA2yWy1UCjfD9SZxUp1HkIUNWGTqB2KVoT2YHXBVel4yVmWhM1qdAcUn5OXlwcF90/NQPaTyAJirnlMjsrVZwsyNzOQfto2hPUOlJtOjTKk1WoN5fdSrWVlzoT2KXqB2ZPVCDbUlDYTngMRjmJ2fq1WmqzVny/UJxwuvOHr5AdSQMADkAIoHXjEyGLI1RZX5ysFSJEr4Q0rddZIdQocQpJyD9USZsieW5dlKmAcdPgn9JBP8YjJUCfg1/XzD7IkRYKia/b36r7OONSAV2pigG/V52cT+DwDf2iYWzS/khDAvpR8XU+exv7RMLhlzDYzHSm4KZPyufdasW8vXzk+2AQKB03sQa3UrNur189PtgEyAY2WCOtAff6WE8RD9y32H9lZshIJKoeOzqhCjWimZfb3Zuew84DxSjzE+o574VVkUH4w3Yyw6kmUY+WmDjikHRPecD1w/irAATg9QEW7nX2WfOy5N13NK2xR2px1sOrceS2hvOCRnKj3Jz34jtNPsTEu3MMLC2nEhaFJ4KSRkGEPtCuEVy7nEMOBUpJ5YawdCQfKV3nT0AQZ7K7iTOUly35l0F+VG+xk6lonUfok+o9kNsnHhe78kTSq7L3OwghiYKZacxyPmL/h3CD7ZLZibirIrtRZ3qXJLG6lQ0fdGoT2pToT3DrhaVqcn76uNym0Vl6aptLQuYcU0Mhe4PKcP5o4CHnsRutmctxVpv7iJmnJLjBAx0zKjnPaUqOCeogxjcfnYZLR8jlbzw1BI2G8vB3ATecmGGWVvvvJbbQCta1nASAMkk8gIirf96vX9eapxorTRpElqQaOm+POeI61Y06hgdcSRr1Jlbhtmfoc4txDE4yplamzgpzzHoOPTEUKlS5ug1iao08jo35VZbUBwPUodhGCPTFFSNBcSeVo6gkCy8bwAiwXrGHfPAmK3jyMWKhWXmoKPwa9r5h9kSF2fO5uK3U/5Wv6uI6Tqj8GvZ/EPsiQmz0/hTbnpa+ziJVKRAN0BX05/J1PDPJvT9YmFw0fkhiD++nB4vp7Ua9H9omF00r5JOdIdT8FNm3K591K/B9euMqT7YBekAGsGl0HNBXk+cn2xzrFoHw9drQfRvSkrh9/PAgHyU95+oGNhgp/QPv9LD+Iv5APp/0ppbPqCKHaiHZhBTOTmHnc8UjHkJ7hr6SYLDulEYN8q74VNz7SqxK3LMylEdlxKMHo95bQWVqHzjk8s6d0XJFlm2gvOyZnwFQuHwLT8f8ArI/4gMvKakZKaat23KbLIqs2NxxyWYSFtoVpuggZ3lcMdXpgPRtOvBawkTEoSToPBUx1rbnqvRa6LlYcYXVVKU4HploOhKj5wB0yOXVFVidd08eVn5Hj7V3g+GOqZc0n4Dn19FJrZdYUtYlmolXW211OaSFzi+OOpofmpz3kk9UKm6JCe2Y7V2alSUnoAszUmDolbROFsn0ZKfQUmNDxu7S8kirU0fsCIHqvUbuvaozNWnJpM3MSbAHkt7iMDUNISNAojJPd1iMZTUk08uUbkre1dXBTxZybAKWtKrMpW6HKVenO78rNNB1s8wDyPaDkHtELbbLa3h9LRdUk1mYk0huaCRqtnkr9En1HsgS2IXuhidNsTLv3rO5ekiT8x3GVN/pAZHaD1w83FJeaW06gONrSUKQoZCgRgg9hEQi10MnsprXCZlwok70UFa6mO5e9tLtO73pAJV4G6OmlFnXLZPzfSk6Hu64HCvKtIsmSBwuFBLS02KvPKHwc92oMSB2dOFV122Cc+U19nEd55QFPe7UH2RILZw4k3fbac677X2cRqk3XeDlL2+F/gBPdvR/vphetL+SAHVBverpNhToz+T+0TAE0vDYOYfTpsq0LmVmhK085PD0ww7GoCqDabSHmiJuZ+Wf01BI8lPcPrzAHUpbw6RUwFFJyCCOOhjn+CV46mvT3+4X/AMxo8MxCGmYWv5ustjGFT1cgdFa1kzb2r3wBabz7at2af+QlxzCiNVdwyfVCGyTqRntMEk1R6lO7nhdSemN35vTOKXu9eM8I8M22tL6S47vIByRE5+N054v8Kvh8PVDNjb5VW/Td9QnHk418kGCsHEazbaG0BCBgCPe92mM3LM6Z5kfyVroKZkEYjZwFmSh+YmGpOUSFTDyt1APAcyo9gGp/7hh0uRYpVMakpfJCNVLPznFHio9pMKp5uopnfCqfUpiUcKNwlpWNM5x64sHrp4fGaf8A9Uxa4dXU1K0l18x9FQYxhtZWvAYQGDjf/a7VcknaBdqXpNZYZmV+FSriNOidSd5SR1a4UPSYftA2sWpPW3KzNar1OptQUjExLPu7hSsaEgfiniOwxGJ5muTimkz1amplttwOBLjm8ARzjfLbasFaATFViYhqZdSHv/aucIbUU0IinsSOPZPbaBXtn93WkuXl7vohqEtl6UV4QMlWNUehQ09OISaVkpyI1eiazno0jujIFYTjMRYo9MWurCR2c3Vp5R+D3hz3D7IkDs1UPjrbWvFbX2cR6nVjwB3sQfZD62ZrBv22BrnpG/szHKpCdByl5eboNjzg/wAv99MAra/kxmDK71A2TO6fifvpgGbUS2NcaQ6Duh+53W1vjri3SDkYINnjNEnNptHp9xyaZqmzb/g7ranFIwVAhJykg6KxzgjtWzqR4661SbkbzRKL4S9NBa1JHRIOG8qGD5yT3R0c8NvdIG3S9CwecVvDrhkyNh05X3TjlozDBVRW5hcyW99QBlej6RI3s55gZzmOdaltW7c9zXHcE8tym2hRy5MuIZUStTe8ro20k5OSE5J46gc9E1GoyFA+/wA8xYLBOhhi0u69kldrTNEntmbtFkJlwMs1RifWp9kqOEqWDpjJGdTjtjDKW5blo7bn7QveWTO0x1QYbnd9TRZ6QAtPeSQOeCDkDjyhBKO4Rk8igHf14xW+OuGLRNnDVN2i1pm8iUW/byDNTkxkpEw2QS0lJHNY6tdCICZWWF13s1I0SnCQRUJsNS0olSl9ChSsAEkknCdST1GHB7TwkylaBWOuKCiRDQ2j2vZ7NqO1ix5Utpo9TXSan8ope+rdG655ROBvaaY49kCuzxdpTN0/A94yYVKVBPg7M8HFIVJvHRC9CAQScHIODjlmEEgLcwQW2NkNBQi29DJlrEkLHp9euDaNJ+FS0i4ZKnSIcU38IvnVKwUkHcxr9L8WFgXS4SsoS3vHO6jOE9gzriFa4O4QWkKpxX3g7/gPsh9bMXAraBbA59K0P/mYj9NqIkHuPzT7IfGy9f8AKPa6f75v7MxxqRsukWxS4u5xRsudxroj99MBbSvkgIY15Ud5mYrdAUMPNOusJSfxkqO77BCxlnSpkAjBHEHiIdAUkmxW81NPysw3NS53XmVpdbPUpJBH1iHftIelZOw69dkotIcvFiRlkbuhCdzed9YAhEZMenJiaeZaYfnZp1hn+aZceUpDf+FJOE90PfHmIKaDZPx2qITsvf2pFafDnbbRR88/Cek6Mn04x6oC9l78rVLQunZ6uablZqsSyVSanVYS44gfMz3JOOrPVC1VMTapMSRnprwUL3/BulV0W917mcZ7cR5UAtIGdQcgg4I7RDBDsQlz7o7o+y69Zy5mafO0KakWUOpMxNPgJabQDkkL4HQaYjHtVuKQufarUZymuofk2UNyiHk6pd3BhRB5jJIB54gSfrFwTUl4FN3FV5mWxgsOza1II6iCdR6Y1UFKEhIAAHIQ9rXZszklxawTavu4KxUPuerLamptahOrWJpeMF8M5DYUeeND2kAxrbJESVGcq1/Vha2JCjsdGh5LZWQ855OUjmoA8PzhCyXMTTjLTLs5MOMNZ6JlbqlIbzx3Uk4GeyKMxN+CmUE9MiVUrfVLB1XRqV1lGcE6DXEN0rNLR3S5t7py2G5s9nHKzZtKuis1B64mVJU3PyPRJLqQpQcCh53E9uICLTsmar94TFKqoVKSNNUpVVmFeSlhCCQoZ5E4OOzJ5QHocW06h6WedYdQd5DrSihST1gjUH0RkXP1NTL7Zqk8tEwczCS+sh8/n6+V35g03NvY8oLgeQnJVq1Tds1DqFMpUouXqlDcU/SGlLJM5K7oSdD5+g7RlPWYTu8RlKgQQcEEYIPUYwMzExKvIflJh+WeSPJdYcLaxnqIORHsuLcUpx1anFqJUpaiSVE8SSeJh0bMmw4SOdm3XicX94O8fmn2Q+Nliv5SrWH9+39mYQymlzb7Uk0CVvLCMDkDxPqzEgdj0iqd2xUZtGSiXK3yepKEHH1kDvjlUnZdIuUTbfrImJGu/HWQZKpKa3UTm6P5p0aBZ7FDAz1jtiOdWoSn5hU7TilLq9XGFHdCz1pPAHrBj6LzMrLzsm7KTcuh9h1BQ404kKStJ4gg8RCGvH7nQuTTk7ZU82yhRKvg6dJ3U9iHNSB2KHfEOKbKu0kebhRHdbmZdRTMyr7Khx32yP8AqMJeHDe+qHjO7H9p1PdKDbE26kcDKvIcB9GFfwjT8We0wcLPrX0R70TBUhcNEpM9MOOT6ot0yc53jn0Q6Bsz2mEa2hWvoj3ot4s9pecfE+s/RHvQvUNSaRSZLueZig6OAP1Q5/FltL/shWfoj3ov4s9peMfFCs/RT70HUhGkUly8M/O+qLh0dZ9UOfxabTMY+KFZ7kj3oo7NNphI/BCtfRHvQdSEaRSY6ZPI+sRXTA+d9UOY7M9pZ/qhWfoj3orxZ7TMYFoVr6I96DqQjSKTHSpJxvZ7ozsy07MkJlZV5384JISPSo6D1w3/ABZbTOVoVn1D3o6VP2K7Tak4kKt9UqgnVc7MIQE92SfqhDUi2yBEUs6TSUU3MzMOJdm1DBUn5raepJ59p9XbK3YLY0xRaO9dNVZU1N1BARLNrGFNscckcio4OOoDrjzYewCmUGcaqt0zKKtOtkKblkJxLNqHMg6rPpwOww50p3TwiFLLmUmOPLyv/9k=" alt="Woyax">
+        <div>
+          <div class="brand-name">WOYAX</div>
+          <div class="brand-sub">AI Cases</div>
+        </div>
+      </a>
+      <div class="header-contacts">
+        <a class="header-contact" href="https://max.ru/u/f9LHodD0cOKnpRqT_-vc6RXscT3ri55dHgNkp8DqYZtSIpLQ3gXLsQfvlTg" target="_blank" rel="noopener">
+          <span>💬</span> MAX
+        </a>
+        <a class="header-contact" href="https://telegram.me/ale_oleg" target="_blank" rel="noopener">
+          <span>✈</span> Telegram
+        </a>
+        <a class="header-contact" href="https://github.com/woyaxnini" target="_blank" rel="noopener">
+          <span>⎇</span> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Тут собраны и кратко описаны различные мои проекты с применением ИИ и некоторый интересный опыт</h1>
+      <p class="hero-subtitle">Умышленно нет ссылок и технических деталей — их можно найти в других источниках или обращайтесь за подробностями</p>
+    </div>
+  </section>
+
+  <section class="cases-section">
+    <div class="container">
+      <div class="cases-list">
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4"/><path d="M16 8l4 4-4 4"/><path d="M14 5l-4 14"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">ИИ-агенты для ERP-системы MS Dynamics AX</div>
+              <div class="case-subtitle">Программист и консультант (кто не знаком с MS Dynamics AX, можно подставить 1С)</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <div class="case-subhead">Консультант по системе MS Dynamics AX</div>
+                <p class="case-text">Отвечает на вопросы по функционалу системы, путешествует по всей системе и анализирует код в реальном времени.</p>
+                <p class="case-text">Вызываем агента в любом месте системы и задаём любой вопрос: Как выполняется расчёт? Что делает функция? Что означает ошибка? Что делать, если...? Для чего это поле? и т.д.</p>
+                <div class="case-subhead">Программист MS Dynamics AX</div>
+                <p class="case-text">Работает с задачами из трекера (Jira, Redmine): анализирует задачу, задаёт уточняющие вопросы, структурирует ТЗ, создаёт проект, находит и собирает объекты в проект в MS Dynamics AX, предлагает варианты решений, модифицирует объекты, пишет код, компилирует, исправляет ошибки, выполняет всю модификацию и передаёт её консультанту.</p>
+                <p class="case-text">По сути это полноценные агенты, написанные внутри MS Dynamics AX на языке X++, выполняющие задачи в цикле или за некоторое количество последовательных шагов, когда следующий шаг зависит от результата предыдущего, с памятью в рамках задачи.</p>
+                <div class="case-tools"><b>Инструменты:</b> MS Dynamics AX (X++), n8n, DeepSeek API</div>
+                <p class="case-text">Изначально делал для себя — автоматизировал до 70% своей ежедневной работы.</p>
+                <p class="case-text">Сейчас работает в 3-х компаниях, использующих MS Dynamics AX. Есть статьи с подробным описанием и видео.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7.6 8.4L10.5 16.5"/><path d="M16.4 8.4L13.5 16.5"/><path d="M8 7h8"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">ИИ-агент для автоматического аудита бизнес-процессов</div>
+              <div class="case-subtitle">Насыщенный стек инструментов</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">Проводит серию интервью с сотрудниками через мессенджер, выявляет рутину и узкие места, формирует карту процессов с рекомендациями по автоматизации.</p>
+                <p class="case-text">Работает так: загружаем структуру отдела/компании (Excel-файл), получаем ссылку с токеном для каждого сотрудника, сотрудник подключается к боту в мессенджере по ссылке, бот на основе RAG-накопленных знаний проводит с каждым сотрудником 3 волны опросов (в том числе голосовых) по 5-7 вопросов каждая в течение недели, на выходе по завершению выдаёт отчёт о выявленных местах автоматизации и наиболее подходящих для ИИ-автоматизации.</p>
+                <p class="case-text">Накапливает информацию и выявленные процессы, готовится к каждой сессии-опросу, проводит анализ сквозных процессов между сотрудниками и отделами — таким образом охватывает всю компанию целиком.</p>
+                <div class="case-tools"><b>Инструменты:</b> n8n, PostgreSQL, RAG Qdrant, Mistral Embeddings, DeepSeek API и Anthropic API (Claude Sonnet и Opus) — настройка выбора модели под разные задачи, Telegram/MAX/и пр. Bot, SaluteSpeech (для голосовых сообщений)</div>
+                <p class="case-text">Использую для себя в отдельных отделах компаний в качестве первичного обследования. Есть статьи с подробным описанием.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><circle cx="12" cy="13.5" r="3.5"/><path d="M9 7l1.2-2h3.6L15 7"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">Мерчандайзеры и распознавание фото</div>
+              <div class="case-subtitle">Интересный пример с цифрами</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">Производственная продуктовая компания, поставщик для сетей.</p>
+                <p class="case-text">400 постоянных и 300 «плавающих» мерчандайзеров ежедневно делают 2000-4000 фотографий полок и выкладок товаров в магазинах.</p>
+                <p class="case-text">Все эти фото ежедневно выборочно просматривают 2 специальных сотрудника в офисе на предмет правильной выкладки, наличия товаров и учёта работы мерчандайзеров.</p>
+                <p class="case-text">Было желание автоматизировать и расширить проверку фото и самих мерчандайзеров с помощью ИИ-инструментов. Сначала хотел было сам, но, погрузившись в тему, понял, что есть специализированные немаленькие компании, которые уже годами занимаются только этим — распознают фото товаров и полок, выявляют соответствия планограммам, вычисляют размеры по фото и пр. В этом случае правильнее было использовать их сервисы.</p>
+                <p class="case-text">В итоге стоимость обработки тех самых 2000-4000 фото в день составила 1,5-2 млн. рублей в месяц.</p>
+                <p class="case-text">Интересные цифры: 300 тыс. (ЗП сотрудников) ДО и 2 млн. ПОСЛЕ.</p>
+                <p class="case-text">НО: выборочные проверки ДО и проверки всего со своевременной реакцией (мерчандайзер в некоторых случаях даже не сможет отправить фото — сначала надо исправить расположение товара на полке) ПОСЛЕ. Если для компании это основная витрина и значительный прирост продаж, то стоит того?! Скоро узнаем.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L20.5 8H6"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">Агент-менеджер маркетплейсов</div>
+              <div class="case-subtitle">ИИ-автоматизация процессов на маркетплейсе</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text"><strong>Компания:</strong> поставщик на маркетплейсе (нет кабинета продавца и API)</p>
+                <p class="case-text"><strong>Процесс:</strong> менеджеры e-commerce ежедневно вручную проверяют выборочно цены и остатки своих товарных позиций на маркетплейсе, выявляют инциденты (скачки и падения цен, наличие остатков и пр.), по инцидентам они связываются с выделенными менеджерами самого маркетплейса.</p>
+                <p class="case-text"><strong>Решение и реализация:</strong> автоматический (по расписанию) сбор данных с маркетплейса, накопление и анализ информации, проверки на наличие инцидентов, автоматический своевременный сигнал менеджеру маркетплейса. Менеджерам e-commerce теперь только ответ от маркетплейса приходит либо инцидент в кратчайшие сроки решается сам.</p>
+                <p class="case-text"><strong>Результат:</strong> час-два-три ручной работы в день → 0, отчёт ждёт к началу рабочего дня, история накапливается для аналитики, автоматическое своевременное решение инцидентов. Стоимость 2000 рублей в месяц (29$ на подписку Apify для скрапинга)</p>
+                <div class="case-tools"><b>Инструменты:</b> Claude Code (VibeCoding на Python), DeepSeek API, Apify, Яндекс.Диск</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 3v9"/><path d="M4 7.5l8 4.5 8-4.5"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">Производство, завод, склад, паллеты, короба...</div>
+              <div class="case-subtitle">ИИ-оптимизация размещения коробов на паллетах</div>
+            </div>
+            <a class="case-service-btn" href="https://pack.woyax.ru/?code=guest-pack-316b4e" target="_blank" rel="noopener">Получился такой сервис<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg></a>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">Производство продовольственных товаров размером не более ладони. Они упаковываются в мягкие и твёрдые групповые упаковки, упаковки в короба, короба на паллеты. На складах временного хранения оплата за паллету — чем больше товара на паллете, тем дешевле хранение (площадь и высота паллеты фиксированы). Комбинации размеров коробов различные для разных товаров и групповых упаковок и рождаются эти размеры из нескольких факторов: клиенты-поставщики, маркетинг-продажи, сотрудники склада и логистики — каждый в своих интересах пытается влиять на эти размеры, таким образом получается множество вариантов.</p>
+                <p class="case-text">Специальный человек формирует-утверждает-согласовывает оптимальную укладку коробов на паллету. Иногда не оптимальную, как выяснил мой ИИ-агент первым делом, проанализировав все согласованные (порядка 250) схемы — предложил 12 вариантов более экономной укладки с учётом мягкой/твёрдой упаковок (мягкие можно чуть сжимать), изменив немного пропорции коробов (с «сохранением» объёма для размещения фиксированного количества групповых упаковок в коробе), в некоторых случаях предложил другие варианты расположения коробов, нарисовал схемы с пояснениями. Потом дал советы и инструкции по наиболее экономным размерам коробов для ориентиров в маркетинге и продажах. Теперь этот агент-калькулятор первым получает задание на расчёт экономики хранения новых упаковок-коробов в компании.</p>
+                <p class="case-text">Эффективнее, чем человек-математик + калькулятор. Деньги считаются очень просто — тут приводить цифры не буду.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">Агент для поиска заказчиков и подготовки к первому общению</div>
+              <div class="case-subtitle">Чувствительный ИИ-поиск и сбор информации на hh.ru</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">Эта прелесть для меня.</p>
+                <p class="case-text">Работает так:</p>
+                <ol class="case-list">
+                  <li>отбирает очень тонкой настройкой фильтров по большому постоянно пополняемому набору ключевых слов и сочетаний за период вакансии по названиям на hh.ru</li>
+                  <li>проверяет по базе данных, была ли у нас ранее в обработке подобная вакансия — оставляет только новые</li>
+                  <li>проверяет по своим «чёрным» спискам и компаниям те, которые не интересны — отфильтровывает</li>
+                  <li>каждую вакансию пропускает через ИИ с соответствующим постоянно улучшаемым промптом — это многофакторный анализ (иногда я принимаю решение откликаться или нет почти на интуитивном уровне по совокупности красных/зелёных флагов, и этот пункт должен это повторить)</li>
+                  <li>те вакансии, которые прошли, оцениваются и разделяются на 3 группы (HIGH, MEDIUM, LOW) не формально, а по очень чётким критериям</li>
+                  <li>по вакансиям из категории HIGH дополнительный сбор информации о компании (hh, сайт, поиск в интернете), все вакансии компании на hh (для понимания кого ищут, чем живут, какие системы используют и пр.)</li>
+                  <li>ИИ-анализ собранных описаний из п.6, выявление предполагаемых возможных болей в процессах на основе накопленного опыта (пересекается с ИИ-агентом для автоматического аудита бизнес-процессов), наложение моего опыта и стека, формирование карты ИИ-направлений с вариантами решений (это можно иногда даже в сопроводительном письме отправить — они только ищут специалиста, который подскажет, а в сопроводительном сразу угадываю их боли и предлагаю решения)</li>
+                  <li>ИИ-анализ и сводка по шаблону для подготовки к собеседованию — что и в каких тональностях обсуждать</li>
+                  <li>мои отклики по файлу на hh, краткие отчёты о результатах и акценты на тонких моментах для дообучения агента более глубокому анализу</li>
+                </ol>
+                <p class="case-text">Зачем я об этом тут написал: иллюстрация любого многофакторного процесса на грани интуиции и накопленного опыта с непрерывным усовершенствованием — наверняка у вас также при поиске-выборе клиентов/поставщиков/товаров/сервисов/исполнителей/партнеров... список бесконечен.</p>
+                <div class="case-tools"><b>Инструменты:</b> Claude Code, скрипты на Python, Claude Sonnet API, DeepSeek API</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0 1 16 0"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19v1a3 3 0 0 1-3 3h-3"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">Сервисдески, ИТ, трекеры задач, поддержка, боты</div>
+              <div class="case-subtitle">На примере ИИ-автоматизации создания заявок в ИТ-отдел</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">В одной компании большая часть сотрудников была очень недовольна сервисдеском как сервисом. ИТ-директор обозначил это как первую приоритетную задачу для ИИ. В самодельной веб-форме заполнение множества полей для создания каждой заявки, множество бессмысленных и неинформативных уведомлений на почту по каждому движению в заявке. При общении со службой поддержки также выяснилось, что они очень недовольны качеством описаний проблем в заявках — почти половина заявок возвращалась пользователям с уточняющими вопросами. Моя работа на первом этапе осложнялась ещё и очень нелояльным к ИИ руководителем отдела поддержки — он недостаточно активно принимал участие в формировании решений.</p>
+                <p class="case-text">Первое, что я сделал: MCP-сервер для трекера задач и автоматический анализ задач за неделю + ИИ-сводка руководителю поддержки по всем возможным разрезам на почту. Получив пару красивых выверенных сводок и поигравшись сам с MCP-сервером, руководитель поддержки загорелся созданием бота-помощника для заявок.</p>
+                <p class="case-text">Перед созданием заявки через мессенджер бот уточняет необходимую минимальную информацию у пользователя. Я провёл анализ всех существующих заявок, которые возвращались на уточнения пользователям, выявил (с ИИ) паттерны и разбил на категории — не так много вариантов уточнений оказалось. На этой информации сделали необходимые промпты, которые улетают в DeepSeek API вместе с обращениями пользователей (в RAG не было необходимости — мы определяли категорию уточнения и отправляли соответствующий промпт). Также добавили регистрацию в боте и профиль пользователя, чтобы часть информации вводилась один раз и не запрашивалась при создании каждой заявки. Запустили пилот — все были довольны, а руководитель поддержки теперь никак не остановится — всё придумывает новые улучшения. Теперь делаем автоматическое формирование базы знаний на основе заявок.</p>
+                <div class="case-tools"><b>Инструменты:</b> Claude Code, DeepSeek API, любые трекеры задач и сервисдеск-системы, любые мессенджеры</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="6" rx="1.5"/><rect x="4" y="14" width="16" height="6" rx="1.5"/><circle cx="8" cy="7" r="0.9" fill="currentColor" stroke="none"/><circle cx="8" cy="17" r="0.9" fill="currentColor" stroke="none"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">MCP-серверы 2-х видов</div>
+              <div class="case-subtitle">Просто так, для себя и под заказ</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">Сделал MCP-серверы: MAX (мессенджер), OZON, Честный Знак, Яндекс.Трекер, ВЕТИС Меркурий и многие другие. С установкой локально и подключением по URL. Есть ссылки, их можно найти в открытых источниках, некоторые зарегистрированы в официальном едином реестре.</p>
+                <p class="case-text">Помимо прямого использования, удобно иногда сделать MCP-сервер для демонстрации возможностей и для усиления эффекта презентации или когда заказчик сам пока не может точно сформулировать, что он хочет, или с целью вовлечения скептиков (как в случае с руководителем поддержки в кейсах с сервисдесками).</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">Создаю что-то новое с ИИ</div>
+              <div class="case-subtitle">Некоторые функциональные области или автоматизации в небольших компаниях (без ИИ внутри, но сделанные с помощью ИИ)</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <div class="case-subhead">Автосалон</div>
+                <p class="case-text">40 менеджеров по продажам автомобилей. Строим «единое окно» управления для каждой роли в компании. Одно из таких окон — витрина для руководителя отдела продаж (РОП): рабочий экран, где он видит все машины и управляет продажами. Витрина показывает список машин с фильтрами/поиском и даёт РОПу выполнять действия:</p>
+                <ul class="case-list">
+                  <li>Бронировать авто — отметить машину как забронированную (дата/комментарий/информация о клиенте), чтобы её не продали дважды</li>
+                  <li>Отправлять на выдачу — сменить статус машины на «на выдаче» / «продано»</li>
+                  <li>Фиксировать маржинальность — внести цену продажи и увидеть/сохранить маржу (цена продажи − себестоимость) для финансового учёта</li>
+                  <li>Распределять продажу на менеджера — назначить ответственного менеджера по машине/сделке</li>
+                  <li>KPI-виджеты сверху: сколько машин в наличии / забронировано / на выдаче, суммарная маржа</li>
+                  <li>Разные права: РОП видит всё, менеджер — только свои машины</li>
+                  <li>Выгрузка сделок (для финансиста) и лог действий</li>
+                  <li>Адаптив под телефон</li>
+                </ul>
+                <div class="case-subhead">Производственная компания, поставщик сетей</div>
+                <p class="case-text">Компания планирует трейд-маркетинговые активности и их бюджеты по ключевым сетям (NKA).</p>
+                <p class="case-text"><strong>Было:</strong> в Excel-файле недельная сетка на год, блоки по статьям расхода (ТМА/Others/Маркетинг), активности с периодом, механикой, суммами, АК %, № PO, план/факт.</p>
+                <p class="case-text"><strong>Минусы:</strong> неудобно в большом Excel-файле, нет одновременного многопользовательского режима, доступ ко всей информации сразу для всех (можно просто забрать с собой файл с критичной информацией при увольнении, например).</p>
+                <p class="case-text"><strong>Стало:</strong> кастомное веб-приложение с БД, удобными инструментами для ввода и отображения информации, правами доступа и многопользовательским режимом.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"/><path d="M12 20V4"/><path d="M20 20v-7"/><path d="M2 20h20"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">Аналитики, отчётность, дашборды, презентации...</div>
+              <div class="case-subtitle">Качество, стоимость, сроки — выгода по всем направлениям сразу</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">В филиале международного холдинга 3 аналитика каждый месяц готовят презентацию на 48 утверждённых слайдов с различными графиками, метриками, сравнениями с другими периодами и своими комментариями на английском. Каждый из аналитиков отвечает за свои 2-3 направления, которые представлены определённым количеством слайдов в итоговом отчёте. Внешне это простая презентация в PowerPoint. Графики и данные для презентации вырезаются из многочисленных Excel-файлов с различными маппингами и дополнительной информацией. Excel-файлы, в свою очередь, создаются на основе кубов и отчётов из 1С и других систем и источников.</p>
+                <p class="case-text">Информации и её источников много. 5-го числа каждого месяца они могут начинать собирать её, 7-го числа фиксируют окончание изменений, до 15-го числа (что не очень нравится руководству) месяца, следующего за отчётным, они должны подготовить итоговую презентацию, проведя анализ и дав свои комментарии. Иногда этот период проходит в спешке и с переработками, но до следующего месяца можно аккуратно расслабиться.</p>
+                <p class="case-text">Я перенёс итоговую презентацию на html-страницы, слайдов стало меньше, но добавился интерактив с переключениями на страницах, в некоторых местах появилась ненавязчивая анимация. Предварительный сбор информации за месяц запускаем 5-го числа, 7-го запускаем финальный прогон — 8-го у нас готовая новая презентация. Внешний вид сразу отметило и положительно оценило руководство.</p>
+                <p class="case-text">Сбор информации делаем сразу из кубов и 1С (минуя Excel-файлы). Удобные формы для ввода дополнительной информации. Структура html-страниц фиксированная. Графики и комментарии на слайдах формируем с помощью ИИ. Передаём презентацию руководству 10-13-го числа каждого месяца после неспешной проверки аналитиками.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2.5"/><circle cx="12" cy="10" r="2.2"/><path d="M8 16.5c.8-1.9 2.3-2.9 4-2.9s3.2 1 4 2.9"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">HR, вакансии, рыночные зарплаты</div>
+              <div class="case-subtitle">Сервис самообслуживания: свод зарплат с hh.ru в один клик</div>
+            </div>
+            <a class="case-service-btn" href="https://hh.woyax.ru/?code=woyax-demo" target="_blank" rel="noopener">Получился такой сервис<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg></a>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">HR-специалисты регулярно готовят свод рыночных зарплат по нужным должностям в нужном регионе — например, чтобы обосновать клиенту стоимость персонала. Раньше это делалось вручную: поиск на hh.ru, копирование в Excel, чистка, оформление.</p>
+                <p class="case-text">Сделали веб-сервис самообслуживания: HR открывает страницу по ссылке, выбирает регион, должности, период и другие фильтры, нажимает кнопку — через минуту готовый Excel-файл со сводом вакансий и зарплат. Наборы фильтров сохраняются, у каждой компании — свои.</p>
+                <p class="case-text">Важная часть — ИИ-анализ описания каждой вакансии: отсев рекламных и нерелевантных вакансий и извлечение из текста того, чего нет в структурных данных hh.ru. Пример: требование личного автомобиля простыми правилами не определяется («не нужен личный автомобиль», «управлять автомобилем руководителя», SEO-блоки — сплошные ложные срабатывания), а ИИ разбирает такие случаи корректно.</p>
+                <div class="case-tools"><b>Инструменты:</b> Claude Code (VibeCoding на Python), DeepSeek API, hh.ru API, VPS (Docker)</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 14.5a2 2 0 0 1-2 2H8.5L4 20.5V5.5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/><circle cx="8.8" cy="10.2" r="0.9" fill="currentColor" stroke="none"/><circle cx="12.5" cy="10.2" r="0.9" fill="currentColor" stroke="none"/><circle cx="16.2" cy="10.2" r="0.9" fill="currentColor" stroke="none"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">Внутренний ИИ-чат компании на LibreChat</div>
+              <div class="case-subtitle">Сотрудники задают вопросы на естественном языке — ответы на данных компании через MCP</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">Сотрудникам нужен один понятный инструмент: задал вопрос простым языком — получил ответ на данных компании. Разворачиваю внутри контура компании ИИ-чат на открытой платформе LibreChat: привычный интерфейс в стиле ChatGPT, вход по корпоративной учётке (домен/SSO), у каждого сотрудника свои чаты и свои права.</p>
+                <p class="case-text">К чату через MCP-серверы подключаются системы компании: 1С, склад (WMS), корпоративная база знаний, государственные системы и другие. Сотрудник задаёт вопрос — модель сама выбирает нужные инструменты, достаёт данные и собирает ответ. Личность сотрудника пробрасывается в каждый MCP — данные отдаются в рамках его прав.</p>
+                <p class="case-text">Под разные задачи подключаются разные LLM — микс из внутренних (локальные модели, данные не покидают компанию) и внешних через единый шлюз: модели комбинируются и заменяются настройкой, без переделки системы. Все запросы логируются, доступы и бюджеты управляются из админ-панели, база чатов бэкапится по расписанию.</p>
+                <p class="case-text">Проведено не одно внедрение, успешно эксплуатируется: в одном случае принял готовый стенд на поддержку и развитие, в другом — проектирование и установка с нуля.</p>
+                <div class="case-tools"><b>Инструменты:</b> LibreChat, LiteLLM, MCP-серверы (1С, WMS, база знаний, ФГИС Меркурий и др.), локальные и облачные LLM (DeepSeek и др.), Docker, Active Directory / SSO</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">Распознавание документов для 1С</div>
+              <div class="case-subtitle">Счета поставщиков: 15-20 минут ручной перебивки → 2-3 секунды</div>
+            </div>
+            <a class="case-service-btn" href="https://docrec.woyax.ru/?code=guest-docrec-mjltkvqw" target="_blank" rel="noopener">Получился такой сервис + API<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg></a>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">Компания получает счета на оплату от поставщиков в PDF. Бухгалтеры и операторы вручную перебивают каждое поле копипастом в 1С: реквизиты сторон, номера, даты, таблица позиций, суммы, НДС — 15-20 минут на каждый документ, и всегда есть риск опечатки.</p>
+                <p class="case-text">Сделал сервис распознавания: 1С отправляет файл по API, через 2-3 секунды возвращается структурированный JSON — 1С заполняет документ сама. Оператору остаётся проверить и провести.</p>
+                <p class="case-text">Внутри — комбинационный подход: алгоритмы делают всё, что можно сделать без ИИ (разбор раскладки документа, поиск координат каждого значения, арифметика и контрольные проверки, вычисление ставки НДС из сумм), а ИИ подключается точечно под мини-задачи, где без него никак. Поэтому быстро, дёшево (копейки за документ) и надёжно: каждое значение проверяется и подсвечивается прямо в документе — видно, откуда оно взято.</p>
+                <p class="case-text">Получился готовый сервис распознавания документов: работает и в web-интерфейсе (загрузил файл — получил разбор с подсветкой), и по API для интеграции с 1С или любой другой системой.</p>
+                <div class="case-tools"><b>Инструменты:</b> Claude Code (VibeCoding на Python), DeepSeek API, FastAPI, VPS (Docker)</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head" role="button" tabindex="0" aria-expanded="false">
+            <span class="case-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M6.5 10.5h2.2l1.4-2.8 2.4 4.8 1.4-2h3.6"/><path d="M12 17v3"/><path d="M8.5 20h7"/></svg></span>
+            <div class="case-head-text">
+              <div class="case-title">ИИ-агент мониторинга ИТ-инфраструктуры (Zabbix)</div>
+              <div class="case-subtitle">Помощник для сетевых и системных администраторов: меньше шума, инциденты не теряются</div>
+            </div>
+            <span class="case-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </div>
+          <div class="case-body-wrap">
+            <div class="case-body">
+              <div class="case-body-inner">
+                <p class="case-text">Боль директора: Zabbix мониторит инфраструктуру компании (376 хостов, почти 30 тысяч метрик) и генерирует сотни событий в сутки — админы на этот поток давно не реагируют. Настоящие проблемы тонут в шуме, уровни критичности обесценены. Показательный случай: об инциденте узнавали через 3 часа — по заявке от пользователя, хотя мониторинг видел проблему с первой минуты.</p>
+                <p class="case-text">Начал не с ИИ, а с анализа потока: выгрузил события за период и сопоставил их с заявками сервисдеска. Выяснилось: 65% шума — два повторяющихся сюжета, которые лечатся правильной настройкой самого Zabbix, без всякого ИИ. Честно разделил работу на две части: гигиена мониторинга (зависимости триггеров, пороги, сервисные окна) — и ИИ-агент поверх уже чистого потока.</p>
+                <p class="case-text">Агент нормализует события и группирует их в инциденты (не 15 алертов об одном и том же, а один инцидент), накапливает историю и кластеризует повторяющиеся проблемы, ищет первопричины и шлёт админам внятные уведомления в мессенджер — по конкретному блокеру, а не поток. Для типовых инцидентов — каталог готовых сценариев устранения: агент предлагает сценарий и запускает его по согласованию в мессенджере, а давно проверенные — автоматически. Принцип безопасности: ИИ не пишет команды сам, а только выбирает сценарий из утверждённого каталога.</p>
+                <p class="case-text">Результат: вместо сотен событий — порядка 20 осмысленных уведомлений в сутки; инциденты, о которых раньше узнавали через 3 часа из заявки пользователя, теперь приходят админу в мессенджер за минуты; типовые проблемы закрываются сценарием до того, как их заметили пользователи; у руководителя — сводка и статистика по инцидентам вместо потока жалоб.</p>
+                <div class="case-tools"><b>Инструменты:</b> Zabbix API, Python (FastAPI), PostgreSQL, Redis, DeepSeek API и локальные LLM через шлюз, бот в Telegram/MAX, Яндекс.Трекер, Docker</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-title">Прямая связь</div>
+        <ul class="footer-list">
+          <li><a href="mailto:woyax@yandex.ru">woyax@yandex.ru</a></li>
+          <li><a href="tel:+79263971039">+7 926 397 10 39</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-title">Мессенджеры</div>
+        <ul class="footer-list">
+          <li><a href="https://max.ru/u/f9LHodD0cOKnpRqT_-vc6RXscT3ri55dHgNkp8DqYZtSIpLQ3gXLsQfvlTg" target="_blank" rel="noopener">Oleg A <span class="muted">в MAX</span></a></li>
+          <li><a href="https://telegram.me/ale_oleg" target="_blank" rel="noopener">@ale_oleg <span class="muted">в Telegram</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-title">Каналы</div>
+        <ul class="footer-list">
+          <li><a href="https://max.ru/id503610654564_biz" target="_blank" rel="noopener">WOYAX в MAX <span class="muted">новости проекта</span></a></li>
+          <li><a href="https://telegram.me/woyax_ai" target="_blank" rel="noopener">@woyax_ai <span class="muted">ИИ-автоматизация</span></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <img class="footer-logo-round" src="data:image/jpeg;base64,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" alt="Woyax">
+      <div>© 2026 Woyax · Все MCP зарегистрированы в официальном едином реестре <a href="https://registry.modelcontextprotocol.io/" target="_blank" rel="noopener" class="footer-bottom-link">Official MCP Registry</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.case-head').forEach(function (head) {
+    function toggle() {
+      var card = head.closest('.case-card');
+      var open = card.classList.toggle('open');
+      head.setAttribute('aria-expanded', open ? 'true' : 'false');
+      // В Метрику — какой кейс раскрыли (цель case_open)
+      if (open && window.ym && METRIKA_ID) {
+        var title = head.querySelector('.case-title');
+        ym(METRIKA_ID, 'reachGoal', 'case_open', { case_title: title ? title.textContent : '' });
+      }
+    }
+    head.addEventListener('click', function (e) {
+      if (e.target.closest('a')) return;
+      toggle();
+    });
+    head.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
